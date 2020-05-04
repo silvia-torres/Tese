@@ -1,0 +1,19 @@
+#pricing {
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    background-color:initial;
+    color: rgb(245, 11, 11);
+}
+p.editorial{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+
+p.autor{
+    text-align: center;
+}

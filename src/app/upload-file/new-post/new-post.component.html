@@ -1,0 +1,74 @@
+
+<div class="container">
+<div class="card mt-5" >
+  <div class="card-body">
+        <form #RevistaForm="ngForm" (ngSubmit)="addNewPost(RevistaForm.value)">
+   
+          <h1 class="titulo">AGREGAR NUEVA REVISTA</h1>
+          <input type="hidden" name="id" [(ngModel)]="postSvc.selectedRevista.id">
+        <div class="etiqueta">
+          <label>Número de Revista: </label>
+        </div>
+          <div class="form-group">
+              <input 
+              type="text"
+              class="form-control"
+              name="numeroR"
+              #nombre="ngModel"
+              [(ngModel)]="postSvc.selectedRevista.numeroR"
+              placeholder="Escribe número de revista:"
+              >
+              <div class="alert-danger" *ngIf="(numeroR.touched || numeroR.dirty) && numeroR.errors.minLength">
+                <div class="container-error-message">
+                  Campo requerido
+                </div>
+              </div>
+          </div>
+          <div class="form-group">
+            <label>Selecciona Imagen De Portada: </label>
+              <input
+              type="file"
+              class="form-control"
+              name="imagenR"
+              (change)="handleImage($event)"
+              #nombre="ngModel"
+              [(ngModel)]="postSvc.selectedRevista.imagenR"
+              />
+          </div>
+          <div class="etiqueta">
+            <label>Selecciona PDF:</label>
+          </div>
+                    <div class="form-group">
+                        <input
+                        type="file"
+                        class="form-control"
+                        name="pdf"
+                        (change)="handleImage2($event)"
+                        #nombre="ngModel"
+                        [(ngModel)]="postSvc.selectedRevista.pdf"
+                        />
+                    </div>
+
+         
+       
+<div class="form-group">
+
+  <button class="class btn btn-primary" type="submit">
+    <i class="fas fa-plus-circle" ></i>Agregar Revista
+
+</button>
+  <button class="btn btn-secondary" type="reset" (click)="resetForm(productoForm)">  
+    <i class="fas fa-sync-alt"></i>Reset
+</button>
+
+
+</div>
+      </form>
+  </div>
+</div>
+</div>
+
+
+
+
+  

@@ -1,0 +1,146 @@
+body{
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    background-color: white;
+    color: white;
+}
+
+    #pricing {
+
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        background-color: white;
+        color: white;
+    }
+    #pricing .section-title {
+        padding-bottom: 75px;
+    }
+    
+    .pricing-table ul {
+        padding-left: 0;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    
+    
+    .pricing-table {
+
+        text-align: center;
+        color: white;
+        background-color:initial;
+        padding-bottom: 50px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+    .pricing-table.big {
+        padding-bottom: 60px;
+        margin-top: -25px;
+    }
+    /*Titulos de revista*/
+
+    h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: rgb(226, 213, 213);
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+
+    .pricing-table h4 {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: rgb(226, 213, 213);
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+    
+    .pricing-table.big h4 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    
+    .pricing-table.big .price {
+        background-color: #EE5A3F;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+    .pricing-table.popular .price {
+        background-color: #EE5A3F;
+    }
+    
+    .section-title {
+        text-align: center;
+        padding-bottom: 90px;
+    }
+    .section-title h2 {
+        text-transform: uppercase;
+    }
+    .section-title p {
+        padding-bottom: 8px;
+        margin-bottom: 0;
+    }
+    .section-title hr {
+        display: inline-block;
+        top: 4px;
+    }
+    .section-title.light p{
+        color: #fff;
+    }
+    .section-title.light hr {
+        border-color: rgba(255,255,255, .5);
+    }
+    .section-title i {
+        background-color: transparent;
+        padding-left: 11px;
+        padding-right: 10px;
+        font-size: 24px;
+    }
+    hr.left {
+        position: relative;
+        max-width: 250px;
+        width: 100%;
+    }
+    hr.right {
+        max-width: 250px;
+        width: 100%;
+        position: relative;
+    }    
+/*
+    .container{
+        margin-top: 25px;
+        display:grid;
+        grid-row-gap: 15px;
+        justify-content:center ;
+
+        
+    }
+    */
+    /**ANIMACIONES*/
+
+  /*numeros ant*/
+  .transition { 
+    width: 300px;
+  height: 300px;
+  transition: width 1s, height 1s, margin 2s;
+  margin: 50px auto 0;
+}
+.transition:hover{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.hr{
+    white-space:pre-line;
+    
+}
+/**/

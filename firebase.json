@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "angular-tecnocultura",
+      "public": "dist/angular-tecnocultura",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

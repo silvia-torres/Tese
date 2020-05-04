@@ -1,0 +1,19 @@
+<section id="author" >
+   <div class="container" >
+    <div class="section-title">
+           <br>
+      <h2>Conoce nuestros números anteriores</h2>
+      <div class="row" *ngIf="revistas$ | async as revistas">
+        <div class="col-lg-4" *ngFor="let revista of revistas.slice().reverse()">
+          <div class="pricing-table" >
+            <div class="transition">
+            <h4 button title="Revista número:  {{revista.numeroR}}">Número: {{revista.numeroR}} </h4>
+            <p><a button title="Revista {{revista.numeroR}}" 
+              class="nav-link active" [routerLink]="['/post',revista.id]" routerLinkActive="router-link-active">
+              <img src="{{revista.imagenR}}" width="425" height="575" alt="TecnoCultura{{revista.numeroR}}" class="img-fluid"></a></p>
+            </div>  
+          </div>
+       </div>
+       <div class="col-lg-4"></div>
+      </div>
+    

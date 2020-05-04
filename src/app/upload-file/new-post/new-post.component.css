@@ -1,0 +1,41 @@
+
+
+.mt-5{
+    width: 100%;
+ margin-left: 0px;
+ margin-right: 0px !important;
+
+
+}
+.card-body {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+}
+input{
+    border: none;
+    outline: none;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    }
+input:focus{
+    border: none;
+    outline: none;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.etiqueta{
+    margin-top: 2rem;
+}
+.titulo{
+    color: crimson;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "revistatecnocultura-ef63f": {
+      "hosting": {
+        "angular-tecnocultura": [
+          "revistatecnocultura-ef63f"
+        ]
+      }
+    }
+  }
+}

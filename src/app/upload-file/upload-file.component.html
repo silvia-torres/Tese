@@ -1,0 +1,43 @@
+
+<div class="container pt-3">
+  <div class="row justify-content-sm-center">
+    <div class="col-sm-10 col-md-6">
+      <div class="card border-info">
+       <h1> <div class="card-header">Agregar Revista</div></h1>
+        <div class="card-body">
+          <label> Número De Revista: </label>
+          <input id="NumRev" type="text" class="form-control mb-2" maxlength="12"  placeholder="Numero De Revista" pattern="[A-Za-z0-9]+" #userEmail required autofocus/>
+          <br>
+          <label> Archivo PDF: </label> <br>
+          <input id="file-unpload-pdf" type="file" accept="application/pdf" (change) = "onUploadPDF($event)" required />
+          <i class="fas fa-file-pdf"></i>
+          <input #PDFUser type="hidden" [value]="urlPDF|async">
+          <br>
+          <br>
+          <label> Imagen De Portada: </label> <br>
+          <input id="file-unpload-img"  type="file" accept="image/*" (change) = "onUpload($event)" required />
+          <i class="fas fa-file-image"></i>
+          <input #imageUser type="hidden" [value]="urlImage|async">
+          <br>
+          <br>
+          <button *ngIf="urlImage | async;  else btnDisabled" type="submit" class ="btn btn-lg btn-primary btn-block" (click)="validacion()"  >
+            <i class ="fas fa-save"></i>GUARDAR
+          </button>
+            <ng-template #btnDisabled>
+              <button type="submit" disabled=true class ="btn btn-lg btn-secondary btn-block"  (click)="validacion()"  >
+                <i class ="fas fa-save"></i>GUARDAR
+              </button>
+            </ng-template>
+
+          
+          
+          <br>
+          <br>
+          <button class=" btn-primary" style="background: #ffffff" type="submit" onclick="history.back()" >
+          <i class="fas fa-arrow-alt-circle-left"></i>
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
